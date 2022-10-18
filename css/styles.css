@@ -1,0 +1,153 @@
+/* основной цвет #212121 */
+/* вторичный цвет #757575 */
+/* голубой акцент #2196F3 */
+/* белый #000000 */
+/* black #ffffff */
+/* фон героя #2F303A */
+:root {
+  --text-color: #757575;
+  --title-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --background-black-color: #2f303a;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--primary-white-color);
+}
+/* Сброс маркерів списків */
+.list {
+  list-style: none;
+}
+
+/* Logo */
+.logo {
+  color: var(--title-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
+.logo-span {
+  color: var(--accent-color);
+}
+
+/* site nav */
+.site-nav .link {
+  color: var(--title-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* address link */
+.address-link .link {
+  color: var(--title-color);
+}
+
+.address-link .link:hover,
+.address-link .link:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+  background-color: var(--background-black-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+/* button */
+.button {
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--title-color);
+}
+
+.button:active {
+  background-color: aqua;
+}
+
+/* benefits*/
+.benefits-title {
+  color: var(--title-color);
+}
+
+/* work*/
+.work-title {
+  color: var(--title-color);
+}
+
+/* our team */
+.team {
+  background-color: #f5f4fa;
+}
+.team-title {
+  color: var(--title-color);
+}
+
+.teamer .teamer-title {
+  color: var(--title-color);
+}
+
+/* footer */
+.footer {
+  background-color: var(--background-black-color);
+}
+/* footer logo */
+.logo-footer {
+  color: var(--primary-white-color);
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--accent-color);
+}
+
+.logo-span {
+  color: var(--accent-color);
+}
+
+/* footer address */
+.address {
+  color: var(--primary-white-color);
+}
+
+.address-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-footer:hover,
+.address-footer:focus {
+  color: var(--accent-color);
+}
+
+/* portfolio-choice */
+.portfolio-choice .choise {
+  color: var(--title-color);
+}
+
+.portfolio-choice .choise:hover,
+.portfolio-choice .choise:focus {
+  color: var(--accent-color);
+}
+
+/* portfolio-list */
+.portfolio-list .portfolio-work {
+  color: var(--title-color);
+}
