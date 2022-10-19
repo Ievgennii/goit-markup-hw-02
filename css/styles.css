@@ -11,6 +11,8 @@
   --primary-white-color: #ffffff;
   --background-black-color: #2f303a;
   --background-button-color: #f5f4fa;
+  --activ-color: aqua;
+  --address-footer-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -73,20 +75,29 @@ body {
 .button {
   color: var(--title-color);
   background: var(--primary-white-color);
+  cursor: pointer;
 }
 
 .button.primary {
   color: var(--primary-white-color);
   background: var(--accent-color);
+  cursor: pointer;
 }
 
 .button.primary:hover,
 .button.primary:focus {
   color: var(--title-color);
+  background: var(--background-button-color);
 }
 
 .button.primary:active {
-  background-color: aqua;
+  background-color: var(--activ-color);
+}
+
+.button.secondary {
+  color: var(--title-color);
+  background: var(--background-button-color);
+  cursor: pointer;
 }
 
 .button.secondary:hover,
@@ -96,12 +107,8 @@ body {
 }
 
 .button.secondary:active {
-  background-color: aqua;
-}
-
-.button.secondary {
+  background-color: var(--activ-color);
   color: var(--title-color);
-  background: var(--background-button-color);
 }
 
 /* benefits*/
@@ -150,7 +157,7 @@ body {
 }
 
 .address-footer {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-footer-color);
 }
 
 .address-footer:hover,
