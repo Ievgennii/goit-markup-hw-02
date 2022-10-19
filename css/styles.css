@@ -10,6 +10,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --background-black-color: #2f303a;
+  --background-button-color: #f5f4fa;
 }
 
 body {
@@ -70,17 +71,37 @@ body {
 
 /* button */
 .button {
+  color: var(--title-color);
+  background: var(--primary-white-color);
+}
+
+.button.primary {
   color: var(--primary-white-color);
   background: var(--accent-color);
 }
 
-.button:hover,
-.button:focus {
+.button.primary:hover,
+.button.primary:focus {
   color: var(--title-color);
 }
 
-.button:active {
+.button.primary:active {
   background-color: aqua;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+}
+
+.button.secondary:active {
+  background-color: aqua;
+}
+
+.button.secondary {
+  color: var(--title-color);
+  background: var(--background-button-color);
 }
 
 /* benefits*/
@@ -95,7 +116,7 @@ body {
 
 /* our team */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-button-color);
 }
 .team-title {
   color: var(--title-color);
